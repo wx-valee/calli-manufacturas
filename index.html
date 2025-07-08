@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calli Manufacturas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Logo1.png" alt="Calli Manufacturas" />
+    </div>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon"> &#9776; </label>
+      <ul class="menu">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#cotiza">Cotiza</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Soluciones de empaque a tu medida</h1>
+      <p>Fabricación de bolsas plásticas para textiles y proyectos especiales</p>
+    </div>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>En <strong>Calli Manufacturas</strong> fabricamos bolsas plásticas (PVC) de alta calidad para empaques textiles como sábanas y edredones. También ofrecemos servicios de manufactura personalizados para proyectos únicos de nuestros clientes.</p>
+    <div class="mision-vision">
+      <div>
+        <h3>Misión</h3>
+        <p>Ofrecer soluciones de empaque funcionales y personalizadas con altos estándares de calidad.</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Ser líderes en la manufactura de bolsas plásticas en México, adaptándonos a las necesidades cambiantes del mercado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Bolsas para textiles</h3>
+        <p>Diseñadas especialmente para empaques de edredones, sábanas y mantas. Resistentes y de alta presentación.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Manufactura personalizada</h3>
+        <p>Cuéntanos tu proyecto. Nosotros nos encargamos de la fabricación con medidas, materiales y acabados a la medida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-contenido">
+      <div class="item">Imagen 1</div>
+      <div class="item">Imagen 2</div>
+      <div class="item">Imagen 3</div>
+    </div>
+  </section>
+
+  <section id="cotiza" class="cotiza">
+    <h2>Cotiza tu proyecto</h2>
+    <form action="https://formsubmit.co/valeria.alejo.tec66@gmail.com" method="POST"> 
+      <input type="text" name="Nombre" placeholder="Nombre completo" required />
+      <input type="email" name="Correo" placeholder="Correo electrónico" required />
+      <textarea name="Mensaje" placeholder="Cuéntanos tu proyecto..." required></textarea>
+      
+      <!-- Evitar CAPTCHA de FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirección opcional después de enviar -->
+    <input type="hidden" name="_next" value="https://wx-valee.github.io/calli-manufacturas/gracias.html">
+ 
+
+    <button type="submit">Enviar cotización</button>
+    </form>
+  </section>
+  <footer id="contacto">
+    <p> 📍 JOSEFA ORTIZ DOMÍNGUEZ 11 A, EMILIANO ZAPATA Y 2 DE ABRIL, SAN MARTÍN CUAUTLALPAN, C.P.56644, MÉXICO</p>
+    <p> 📞 55 5979 6706 | <strong>WhatsApp:</strong> 55 5376 8725</p>
+    <p>&copy; 2025 Calli Manufacturas. Todos los derechos reservados.</p>
+  </footer>
+    <a href="https://wa.me/525553768725" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+<script>
+  // Cierra el menú al dar clic en cualquier enlace
+  document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('menu-toggle').checked = false;
+    });
+  });
+</script>
+
+</body>
+</html>
+

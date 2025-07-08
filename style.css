@@ -1,0 +1,310 @@
+/* Estilo general */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1d1d1b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #2f2f29;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border: 1px solid #1d1d1b;
+  border-radius: 10px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav {
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu li a:hover {
+  color: #d1af6e;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #d1af6e;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    background-color: #1d1d1b;
+    position: absolute;
+    top: 30px;
+    left: -90px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    z-index: 999;
+    align-items: flex-start;
+  }
+    #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: #d1af6e;
+    z-index: 1000;
+    cursor: pointer;
+  }
+}
+
+/* Oculta el checkbox */
+#menu-toggle {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d1af6e;
+}
+
+/* Hero */
+.hero {
+  background-color: #2f2f29;
+  padding: 80px 20px;
+  text-align: center;
+  border: 1px solid #1d1d1b;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #d1af6e;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+/* Sección Nosotros */
+.nosotros {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.nosotros h2 {
+  color: #d1af6e;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #cccccc;
+}
+
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mision-vision div {
+  background-color: #2f2f29;
+  padding: 20px;
+  border: 1px solid #d1af6e;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.mision-vision h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Servicios */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicios h2 {
+  color: #d1af6e;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background-color: #2f2f29;
+  padding: 20px;
+  border: 1px solid #d1af6e;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.tarjeta h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #cccccc;
+}
+
+/* Galería */
+.galeria {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.galeria h2 {
+  color: #d1af6e;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.galeria-contenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  width: 250px;
+  height: 180px;
+  background-color: #2a2a27;
+  border: 1px solid #d1af6e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Cotiza */
+.cotiza {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cotiza h2 {
+  color: #d1af6e;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cotiza form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cotiza input,
+.cotiza textarea {
+  padding: 12px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cotiza button {
+  padding: 12px;
+  background-color: #d1af6e;
+  color: #1d1d1b;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cotiza button:hover {
+  background-color: #e8c88f;
+}
+
+/* Footer */
+footer {
+  background-color: #141414;
+  color: #cccccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
